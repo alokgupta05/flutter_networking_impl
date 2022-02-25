@@ -5,7 +5,7 @@ import 'weather.dart';
 class HttpHelper {
   final String authority = 'api.openweathermap.org';
   final String path = 'data/2.5/weather';
-  final String apiKey = '7a0307bb027b21f09601f324008d5bff';
+  final String apiKey = 'dummy key';
 
   Future<Weather> getWeather(String location) async {
     Map<String, dynamic> parameters = {'q': location, 'appid': apiKey};
